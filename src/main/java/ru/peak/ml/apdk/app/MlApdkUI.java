@@ -61,12 +61,9 @@ public class MlApdkUI extends UI {
 
         TabSheet tabSheet = buildTabs();
 
-//        Table resultTable = buildResultTable();
-
         VerticalLayout left = new VerticalLayout(tabSheet, apdkRequestsTable);
         left.setSizeFull();
         left.setExpandRatio(tabSheet, 1);
-//        left.setExpandRatio(apdkRequestsTable, 0.5f);
 
         HorizontalLayout contentLayout = new HorizontalLayout(left);
         contentLayout.setSizeFull();
@@ -91,11 +88,6 @@ public class MlApdkUI extends UI {
 
         return tabSheet;
     }
-
-//    private Table buildResultTable() {
-//        apdkRequestsTable = new ApdkRequestsTable();
-//        return apdkRequestsTable;
-//    }
 
     public static AppEventBus getAppEventBus() {
         return ((MlApdkUI) getCurrent()).appEventbus;

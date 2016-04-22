@@ -27,7 +27,6 @@ class ReturnSale extends CommonApdkMessage {
     @Override
     public byte[] getData() {
         return getNewApdkMessage().toArray();
-//        return ORIGINAL_DATA;
     }
 
     @Override
