@@ -11,7 +11,7 @@ x.password = Bac123456
 
 Дополнительно:   
 1.JAR-файл запускается как обычное java-приложение:
-java -jar <jar-name>.jar
+*java -jar <jar-name>.jar*    
 2. Для запуска в виде сервиса в ОС семейства Linux
 - Отредактировать файл, указав значение переменных SERVICE_NAME, PATH_TO_JAR, PID_PATH_NAME и путь к каталогу с jar файлом.
 - Скопировать apdk-emulator-web.sh в /etc/init.d/
